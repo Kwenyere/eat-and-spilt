@@ -1,2 +1,2 @@
-- This is an that split bills between friends
+- This is an app that split bills between friends
 - I learnt more about controlled Elements and Derived State using this Project
