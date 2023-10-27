@@ -46,6 +46,10 @@ export default function App() {
     setAddFriend(false);
   }
 
+  function handleSplitBill(value) {
+    console.log(value);
+  }
+
   return (
     <div className="app">
       <div className="sidebar">
@@ -60,7 +64,7 @@ export default function App() {
           {addFriend ? "Close" : "Add Friend"}
         </Button>
       </div>
-      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} />}
+      {selectedFriend && <FormSplitBill selectedFriend={selectedFriend} onSplitBill = {handleSplitBill} />}
     </div>
   );
 }
